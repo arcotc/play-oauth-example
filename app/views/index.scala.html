@@ -1,20 +1,25 @@
 @*
- * This template takes a single argument, a String containing a
- * message to display.
- *@
+* This template takes a single argument, a String containing a
+* message to display.
+*@
 @(message: String)
 
 @*
- * Call the `main` template with two arguments. The first
- * argument is a `String` with the title of the page, the second
- * argument is an `Html` object containing the body of the page.
- *@
-@main("Welcome to Play") {
+* Call the `main` template with two arguments. The first
+* argument is a `String` with the title of the page, the second
+* argument is an `Html` object containing the body of the page.
+*@
+@main("Play OAuth Example") {
+<link rel="stylesheet" media="screen" href="/@@documentation/resources/style/main.css">
 
-    @*
-     * Get an `Html` object by calling the built-in Play welcome
-     * template and passing a `String` message.
-     *@
-    @welcome(message, style = "scala")
+<section id="top">
+    <div class="wrapper">
+        <h1>@message</h1>
+    </div>
+</section>
 
+<div id="content" class="wrapper doc">
+    <article>
+    </article>
+</div>
 }
